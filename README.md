@@ -18,6 +18,14 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 * Pry for object inspection and debugging
 * Timecop for time based testing
 
+## Setup
+
+* Checkout this code.
+* ` bundle `
+* db create, migrate, seed
+* `bundle exec rspec`
+
+
 
 ## Challenge installation
 
@@ -26,3 +34,5 @@ Problems, challenges are installed using Bundler and a secret gist.
 ```
 gem 'name_of_gem', git:  'git://gist.github.com/<user>/<this ID>.git'
 ```
+
+
