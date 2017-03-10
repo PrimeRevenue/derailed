@@ -32,7 +32,7 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 Problems, challenges are installed using Bundler and a secret gist.
 
 ```
-gem 'name_of_gem', git:  'git://gist.github.com/<user>/<this ID>.git'
+gem 'name_of_gem', git:  'https://gist.github.com/<user>/<this ID>.git'
 ```
 
 
