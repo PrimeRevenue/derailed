@@ -6,9 +6,11 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 
 * SQLite3 for DB
 * RSpec for testing
-* Supports standard views (ERB) and JSON reponses (responders gem)
+* Supports standard views (Slim) and JSON reponses (responders gem)
 * Single REST resource setup for just GET with JSON reponse
 * Single model and basic seed to get started.
+* Boostrap 4 Rails
+
 
 ## Gems installed for use
 
