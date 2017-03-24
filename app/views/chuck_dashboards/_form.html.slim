@@ -1,0 +1,9 @@
+= form_for @chuck_dashboard do |f|
+  - if @chuck_dashboard.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@chuck_dashboard.errors.count, "error")} prohibited this chuck_dashboard from being saved:"
+      ul
+        - @chuck_dashboard.errors.full_messages.each do |message|
+          li = message
+
+  .actions = f.submit
