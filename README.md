@@ -2,6 +2,8 @@
 
 A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in the gems and setup to be focused on business problems rather than boilerplate and/or seutp.
 
+![Derailed](./train-wreck.jpg)
+
 ## Project Overview, Basics
 
 * SQLite3 for DB
