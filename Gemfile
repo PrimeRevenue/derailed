@@ -4,12 +4,13 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
 #gem 'rails-api'
-gem 'active_model_serializers' 
+gem 'active_model_serializers'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'coffee-rails', '~> 4.1.0'
 #gem 'jbuilder'
 gem 'jquery-rails'
+gem 'kaminari'
 gem 'puma'
 gem 'responders'
 gem 'sass-rails', '~> 5.0'
@@ -20,6 +21,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 gem 'uglifier', '>= 1.3.0'
+gem 'giphy'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

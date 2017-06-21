@@ -3,8 +3,11 @@ class ChuckDashboardsController < ApplicationController
 
   # GET /chuck_dashboards
   def index
-    #@chuck_dashboards = ChuckNorrisFact.all
+    @chuck_facts = ChuckNorrisFact.all.page params[:page]
   end
+
+  private
+
 
   # GET /chuck_dashboards/1
   #def show
