@@ -3,7 +3,7 @@
 This info includes an A/B test to demonstrate same simple Rails 4 app used for coding interviews.
 
 * One image created will include the entire app, bundled Gems and SQLite DB included - Test A
-* One image is same app but loads the app via mount, running CMD will bundle, load schema and run perf test.
+* One image is same app but loads the app via mount, running CMD will bundle, load schema and run perf test. - Test B
 
 ## A version-controlled repository so any changes/improvements to the test case can be easily tracked.
 
