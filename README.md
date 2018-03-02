@@ -29,14 +29,31 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 * db create, migrate, seed
 * `bundle exec rspec`
 
+## Test
+
+Open 'http://localhost:3000/' on your browser and a simple web page with 'Chuck's Dashboard' should appear.
 
 
 ## Challenge installation
 
-Problems, challenges are installed using Bundler and a secret gist.
+In some cases, challenges are installed using Bundler and a secret gist or copy/paste from a gist.
 
 ```
 gem 'name_of_gem', git:  'https://gist.github.com/<user>/<this ID>.git'
 ```
 
+## Manual fact generation
+
+Using the Faker gem.
+
+```
+require 'csv'
+CSV.open("/tmp/chuck_norris_facts.csv", "wb") do |csv|
+  csv << ["fact"]
+  100.times do
+    csv << [Faker::ChuckNorris.fact]
+  end
+end
+
+```
 
