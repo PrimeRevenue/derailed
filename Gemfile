@@ -22,6 +22,7 @@ source 'https://rails-assets.org' do
 end
 gem 'uglifier', '>= 1.3.0'
 gem 'giphy'
+gem 'rails-html-sanitizer', '~> 1.0.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
