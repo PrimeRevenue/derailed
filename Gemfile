@@ -16,6 +16,7 @@ gem 'responders'
 gem 'sass-rails', '~> 5.0'
 gem "slim-rails"
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sprockets', '~> 3.7.2'
 gem 'sqlite3'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
