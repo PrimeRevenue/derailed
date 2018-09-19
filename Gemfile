@@ -6,7 +6,7 @@ gem 'rails', '4.2.8'
 #gem 'rails-api'
 # gem 'active_model_serializers'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.1.2'
 gem 'coffee-rails', '~> 4.1.0'
 #gem 'jbuilder'
 gem 'jquery-rails'
