@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '~>4.2.8'
 #gem 'rails-api'
 # gem 'active_model_serializers'
 
@@ -24,6 +24,7 @@ source 'https://rails-assets.org' do
 end
 gem 'uglifier', '>= 1.3.0'
 gem 'giphy'
+gem 'rack', '~> 1.6.11'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 
 group :development, :test do
