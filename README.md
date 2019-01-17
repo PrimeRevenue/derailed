@@ -1,6 +1,6 @@
 # Derailed
 
-A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in the gems and setup to be focused on business problems rather than boilerplate and/or seutp.
+A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in the gems and configuration to be focused on business problems rather than boilerplate and/or setup.
 
 ![Derailed](./train-wreck.jpg)
 
@@ -34,15 +34,7 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 Open 'http://localhost:3000/' on your browser and a simple web page with 'Chuck's Dashboard' should appear.
 
 
-## Challenge installation
-
-In some cases, challenges are installed using Bundler and a secret gist or copy/paste from a gist.
-
-```
-gem 'name_of_gem', git:  'https://gist.github.com/<user>/<this ID>.git'
-```
-
-## Manual fact generation
+## Manual fact generation (if needed)
 
 Using the Faker gem.
 
@@ -54,6 +46,10 @@ CSV.open("/tmp/chuck_norris_facts.csv", "wb") do |csv|
     csv << [Faker::ChuckNorris.fact]
   end
 end
+
+# What next?
+
+The PrimeRevenue TEAM will pair with you and have you implement a feature on this simple API.
 
 ```
 
