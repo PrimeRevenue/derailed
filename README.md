@@ -46,6 +46,7 @@ CSV.open("/tmp/chuck_norris_facts.csv", "wb") do |csv|
     csv << [Faker::ChuckNorris.fact]
   end
 end
+```
 
 # What next?
 
