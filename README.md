@@ -22,12 +22,22 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 * Pry for object inspection and debugging
 * Timecop for time based testing
 
+
+## Codeanywhere pre-setup steps (for PrimeRevenue devs)
+
+```
+rvm install 2.5.5
+source ~/.rvm/scripts/rvm
+rvm use 2.5.5
+```
+
 ## Setup
 
 * Checkout this code.
 * ` bundle `
 * db create, migrate, seed
 * `bundle exec rspec`
+
 
 ## Test
 
