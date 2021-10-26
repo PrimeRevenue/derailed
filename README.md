@@ -39,7 +39,11 @@ rvm use 2.5.5
 * `bundle exec rspec`
 
 
-## Test
+## Test/Run app
+
+```
+bundle exec rails s
+```
 
 Open 'http://localhost:3000/' on your browser and a simple web page with 'Chuck's Dashboard' should appear.
 
