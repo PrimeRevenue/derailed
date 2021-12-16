@@ -27,25 +27,24 @@ A bare-bones Rails 4 project for hands-on technical interviews. Opinionated in t
 
 ```
 rvm install 2.5.5
-source ~/.rvm/scripts/rvm
-rvm use 2.5.5
 ```
 
 ## Setup
 
 * Checkout this code.
 * ` bundle `
-* db create, migrate, seed
+* `bundle exec rake db:migrate`
+* `bundle exec rake db:seed`
 * `bundle exec rspec`
 
 
 ## Test/Run app
 
 ```
-bundle exec rails s
+bundle exec puma
 ```
 
-Open 'http://localhost:3000/' on your browser and a simple web page with 'Chuck's Dashboard' should appear.
+Open 'http://localhost:9292/' on your browser and a simple web page with 'Chuck's Dashboard' should appear.
 
 
 ## Manual fact generation (if needed)
@@ -74,7 +73,7 @@ We have created a simple Vue app, which we would like you to make some changes t
 * `/public/vue-app.js`
 * `/public/vue.html`
 
-Navigate in your browser to: 'http://localhost:3000/vue.html' in order to see the Vue app.
+Navigate in your browser to: 'http://localhost:9292/vue.html' in order to see the Vue app.
 
 When the user clicks the button, the app should fetch a random quote from the API, and display it just below the button.
 

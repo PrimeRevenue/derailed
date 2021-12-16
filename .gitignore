@@ -18,3 +18,5 @@
 .DS_Store
 vendor/bundle-docker
 vendor/bundle
+
+lib/derailed
