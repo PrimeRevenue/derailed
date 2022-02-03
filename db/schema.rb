@@ -11,13 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170309143357) do
+ActiveRecord::Schema.define(version: 20220203201652) do
+
+  create_table "bank_accounts", force: :cascade do |t|
+    t.string   "account_type"
+    t.float    "balance"
+    t.integer  "customer_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "bank_accounts", ["customer_id"], name: "index_bank_accounts_on_customer_id"
 
   create_table "chuck_norris_facts", force: :cascade do |t|
     t.string   "fact"
     t.integer  "karatepower"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

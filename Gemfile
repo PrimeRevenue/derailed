@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '~>4.2.8'
 #gem 'rails-api'
 # gem 'active_model_serializers'
-
+gem 'active_model_serializers'
 gem 'coffee-rails', '~> 4.1.0'
 #gem 'jbuilder'
 gem 'jquery-rails'
@@ -29,6 +29,7 @@ gem 'rails-html-sanitizer', '~> 1.0.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'annotate'
   gem 'binding_of_caller', '~>1.0.0'
   gem 'byebug'
   gem 'database_cleaner'
@@ -36,6 +37,8 @@ group :development, :test do
   gem 'faker'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5'
+  gem 'rubocop'
+  gem 'rubocop-rails'
   gem 'timecop'
 end
 

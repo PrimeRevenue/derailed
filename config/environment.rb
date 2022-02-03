@@ -1,5 +1,5 @@
 # Load the Rails application.
-require File.expand_path('../application', __FILE__)
+require File.expand_path("../application", __FILE__)
 
 Rails.logger = Logger.new(STDOUT)
 Rails.logger.level = Logger::DEBUG
