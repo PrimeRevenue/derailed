@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: bundle exec rails server -b 0.0.0.0
+    entrypoint: '/root/entrypoint.sh'
+    container_name: 'web'
+    environment:
+      BUNDLE_PATH: "/bundle/vendor"
+    stdin_open: true
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/derailed:cached
+      - bundle:/bundle
+      - .docker-dev/entrypoint.sh:/root/entrypoint.sh:cached
+volumes:
+  bundle:
